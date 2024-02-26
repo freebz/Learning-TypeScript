@@ -1,0 +1,31 @@
+// 13.4 대체 확장자
+
+// 13.4.1 JSX 구문
+
+const MyComponent = () => {
+  // 다음과 같음:
+  //   return React.createElement("div", null, "Hello, world!");
+  return <div>Hello, world!</div>;
+};
+
+
+
+// jsx
+
+{
+  "cimpilerOptions": {
+    "jsx": "preserve"
+  }
+}
+
+
+
+// .tsx 파일의 제네릭 화살표 함수
+
+const identity = <T>(input: T) => input;
+//               ~~~
+// Error: JSX element 'T' has no corresponding closing tag.
+
+
+
+const identity = <T = unknown>(input: T) => input; // Ok

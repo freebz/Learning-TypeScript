@@ -1,0 +1,59 @@
+// 13.9 구성 확장
+
+// 13.9.1 extends
+
+// tsconfig.base.json
+{
+    "compilerOptions": {
+	"strict": true
+    }
+}
+
+
+
+// packages/core/tsconfig.json
+{
+    "extends": "../../tsconfig.base.json",
+    "includes": ["src"]
+}
+
+
+
+// packages/js/tsconfig.json
+{
+    "extends": "../../tsconfig.base.json",
+    "compilerOptions": {
+	"allowJs": true
+    },
+    "includes": ["src"]
+}
+
+
+
+// 확장 모듈
+
+// packages/tsconfig.json
+{
+    "compilerOptions": {
+	"strict": true
+    }
+}
+
+
+
+// packages/js/tsconfig.json
+{
+    "extends": "@my-org/tsconfig",
+    "compilerOptions": {
+	"allowJs": true
+    },
+    "includes": ["src"]
+}
+
+
+
+// packages/ts/tsconfig.json
+{
+    "extends": "@my-org/tsconfig",
+    "includes": ["src"]
+}

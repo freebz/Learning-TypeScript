@@ -1,0 +1,8 @@
+// 13.10.2 references
+
+// shell/tsconfig.json
+{
+  "references": [
+    { "path": "../core" }
+  ]
+}

@@ -1,0 +1,21 @@
+// 13.10.3 빌드 모드
+
+// 코디네이터 구성
+
+// tsconfig.json
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/core" },
+    { "path": "./packages/shell" }
+  ]
+}
+
+
+
+// package.json
+{
+  "scripts": {
+    "build": "tsc -b"
+  }
+}

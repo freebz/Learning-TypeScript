@@ -1,0 +1,6 @@
+// 13.3.2 exclude
+
+{
+  "exclude": ["**/external", "node_modules"],
+  "include": ["src"]
+}

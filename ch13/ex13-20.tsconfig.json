@@ -1,0 +1,11 @@
+// 13.10 프로젝트 레퍼런스
+
+// 13.10.1 composite
+
+// core/tsconfig.json
+{
+  "compilerOptions": {
+    "declaration": true
+  },
+  "composite": true
+}

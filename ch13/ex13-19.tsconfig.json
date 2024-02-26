@@ -1,0 +1,5 @@
+// 13.9.2 구성 베이스
+
+{
+  "extends": "@tsconfig/deno/tsconfig.json"
+}

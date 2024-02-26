@@ -1,0 +1,10 @@
+// 13.2 TSConfig 파일
+
+// 13.2.1 tsc --init
+
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+    // ...
+  }
+}
